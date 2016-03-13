@@ -1,0 +1,17 @@
+{
+    "LOGIN_TO_START": "Connectez-vous pour commencer",
+    "EMAIL": "Adresse email",
+    "REQUIRED_FIELD": "Ce champ est requis",
+    "INVALID_EMAIL": "Cet email est invalide",
+    "PASSWORD": "Mot de passe",
+    "REMEMBER_ME": "Se souvenir de moi",
+    "CREATE_ACCOUNT": "Créer un compte",
+    "LOGIN": "Se connecter",
+    "REGISTER_TITLE": "Créer un nouveau compte",
+    "PASSWORD_VERIFY": "Confirmation du mot de passe",
+    "IDENTICAL_PASS_ERROR": "Les mots de passe saisis ne sont pas identiques",
+    "PSEUDO": "Pseudo",
+    "REGISTER": "S'inscrire",
+    "CANCEL": "Annuler",
+    "PASSWORD_FORGOTTEN": "Mot de passe oublié ?"
+}

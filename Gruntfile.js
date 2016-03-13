@@ -39,11 +39,16 @@ module.exports = function (grunt) {
                         './bower_components/angular-i18n/angular-locale_fr.js',
                         './bower_components/angular-i18n/angular-locale_en.js',
                         './bower_components/angular-route/angular-route.js',
-                        './bower_components/angular-route-segment/build/angular-route-segment.js',
+                        './bower_components/angular-ui-router/release/angular-ui-router.js',
                         './bower_components/angular-translate/angular-translate.js',
                         './bower_components/angular-translate-loader-url/angular-translate-loader-url.js',
                         './bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js',
-                        './bower_components/angular-sanitize/angular-sanitize.js'
+                        './bower_components/angular-sanitize/angular-sanitize.js',
+                        './bower_components/angular-messages/angular-messages.js',      
+                        './bower_components/messageformat/messageformat.js',     
+                        './bower_components/angular-translate-interpolation-messageformat/angular-translate-interpolation-messageformat.js',
+                        './bower_components/messageformat/locale/fr.js',
+                        './bower_components/messageformat/locale/en.js'
                     ]
                 },
                 options: vendorUglifyOptions
@@ -51,13 +56,13 @@ module.exports = function (grunt) {
             app: {
                 files: {
                     './public/js/app.js': [
-                        './src/app.js',
-                        './src/routes.js',
-                        './src/controllers/**/*.js',
-                        './src/services/**/*.js',
-                        './src/directives/**/*.js',
-                        './src/filters/**/*.js',
-                        './src/validators/**/*.js'
+                        './src/app/app.js',
+                        './src/app/routes.js',
+                        './src/app/controllers/**/*.js',
+                        './src/app/services/**/*.js',
+                        './src/app/directives/**/*.js',
+                        './src/app/filters/**/*.js',
+                        './src/app/validators/**/*.js'
                     ]
                 },
                 options: appUglifyOptions
@@ -76,9 +81,9 @@ module.exports = function (grunt) {
                 options: lessOptions,
                 files: {
                     './public/css/common.css': [
-                        './src/style/variables.less',
-                        './src/style/*.less',
-                        './src/style/*.css'
+                        './src/styles/variables.less',
+                        './src/styles/**/*.less',
+                        './src/styles/**/*.css'
                     ]
                 }
             }
@@ -86,17 +91,16 @@ module.exports = function (grunt) {
         watch: {
             less: {
                 files: [
-                    './src/variables.less',
-                    './src/styles/**/*.+(css|less)'
+                    './src/styles/variables.less',
+                    './src/styles/**/*.less'
                 ], // which files to watch
-                tasks: ['less:app', 'beep:error'],
+                tasks: ['less:app'],
                 options: {
                     nospawn: true
                 }
             },
             js: {
                 files: [
-                    './src/**/*.js',
                     './src/app/**/*.js'
                 ],
                 tasks: ['uglify:app', 'beep:error']

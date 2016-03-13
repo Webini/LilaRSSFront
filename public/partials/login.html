@@ -1,0 +1,38 @@
+<div layout="row" layout-fill layout-align="center center">
+    <section class="radius login-section md-whiteframe-2dp">
+        <md-toolbar>
+            <div class="md-toolbar-tools" layout-align="center center">
+                {{ 'LOGIN_TO_START'|translate }}
+            </div>
+        </md-toolbar>
+        <md-content layout-padding>
+            <form name="form">
+                <md-input-container class="md-block">
+                    <label>{{ 'EMAIL'|translate }}</label>
+                    <md-icon>email</md-icon>
+                    <input type="email" required name="email" ng-model="login.email">
+                    <div ng-messages="form.email.$error">
+                        <div ng-message="required">{{ 'REQUIRED_FIELD'|translate }}</div>
+                        <div ng-message="email">{{ 'INVALID_EMAIL'|translate }}</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>{{ 'PASSWORD'|translate }}</label>
+                    <md-icon>lock</md-icon>
+                    <input type="password" required name="password" ng-model="login.password">
+                    <div ng-messages="form.password.$error">
+                        <div ng-message="required">{{ 'REQUIRED_FIELD'|translate }}</div>
+                    </div>
+                </md-input-container>
+                <div layout="row" layout-xs="column" layout-align="space-between center">
+                    <md-switch ng-model="login.remember">{{ 'REMEMBER_ME'|translate }}</md-switch>
+                    <md-button class="md-primary md-raised">{{ 'LOGIN'|translate }}</md-button>
+                </div>
+            </form>
+            <p layout="row" layout-align="space-between center">
+                <a ui-sref="register">{{ 'CREATE_ACCOUNT'|translate }}</a>
+                <a href="/dashboard">{{ 'PASSWORD_FORGOTTEN'|translate }}</a>
+            </p>
+        </md-content>
+    </section>
+</div>

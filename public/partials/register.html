@@ -1,0 +1,54 @@
+<div layout="row" layout-fill layout-align="center center">
+    <section class="radius register-section md-whiteframe-2dp">
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <a ui-sref="login" class="md-icon-button md-button" md-ink-ripple><md-icon>keyboard_backspace</md-icon></a>
+                <h3>{{ 'REGISTER_TITLE'|translate }}</h3>
+            </div>
+        </md-toolbar>
+        <md-content layout-padding>
+            <form name="form">
+                <md-input-container class="md-block">
+                    <label>{{ 'PSEUDO'|translate }}</label>
+                    <md-icon>person</md-icon>
+                    <input type="text" required name="username" ng-model="login.username">
+                    <div ng-messages="form.username.$error">
+                        <div ng-message="required">{{ 'REQUIRED_FIELD'|translate }}</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>{{ 'EMAIL'|translate }}</label>
+                    <md-icon>email</md-icon>
+                    <input type="email" required name="email" ng-model="login.email">
+                    <div ng-messages="form.email.$error">
+                        <div ng-message="required">{{ 'REQUIRED_FIELD'|translate }}</div>
+                        <div ng-message="email">{{ 'INVALID_EMAIL'|translate }}</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>{{ 'PASSWORD'|translate }}</label>
+                    <md-icon>lock</md-icon>
+                    <input type="password" required name="password" ng-model="login.password">
+                    <div ng-messages="form.password.$error">
+                        <div ng-message="required">{{ 'REQUIRED_FIELD'|translate }}</div>
+                    </div>
+                </md-input-container>
+                <md-input-container class="md-block">
+                    <label>{{ 'PASSWORD_VERIFY'|translate }}</label>
+                    <md-icon>lock</md-icon>
+                    <input type="password" required identical-with="login.password" ng-model="passwordVerify" name="passwordVerify">
+                    <div ng-messages="form.passwordVerify.$error">
+                        <div ng-message="identicalWith">{{ 'IDENTICAL_PASS_ERROR'|translate }}</div>
+                        <div ng-message="required">{{ 'REQUIRED_FIELD'|translate }}</div>
+                    </div>
+                </md-input-container>
+                <div layout="row" layout-xs="column" layout-align="end space-between">
+                    <button type="submit" class="md-button md-primary md-raised">{{ 'REGISTER'|translate }}</button>
+                </div>
+            </form>
+            <div class="md-mask" layout="row" layout-align="center center">
+                <md-progress-circular md-diameter="96"></md-progress-circular>
+            </div>
+        </md-content>
+    </section>
+</div>
