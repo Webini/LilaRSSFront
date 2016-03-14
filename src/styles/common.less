@@ -1,15 +1,20 @@
 @import 'variables.less';
 
-body {
-    background-color: #eee;
-}
-
 .text-center {
     text-align: center;
 }
 
 .logo {
     margin: 10px 0px;
+    font-size: 2em;
+    font-weight: normal;
+    b { color: @bc50 }
+    md-icon { 
+        width: 48px;
+        height: 48px;
+        font-size: 48px;
+        color: @bc50; 
+    }
 }
 
 img, .vamiddle {
@@ -18,6 +23,7 @@ img, .vamiddle {
 
 .radius {
     border-radius: 2px;
+    overflow: hidden;
 }
 
 .ll-b500 {
@@ -47,15 +53,46 @@ a.md-button {
   border-bottom: none;
 }
 
-.md-mask {
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.2);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; 
-    -webkit-transition: all 0.3s ease-in-out;
-	   -moz-transition: all 0.3s ease-in-out;
-	     -o-transition: all 0.3s ease-in-out;
-	        transition: all 0.3s ease-in-out;
+loader {
+    padding: 0px !important;
+    margin: 0px !important;
+    
+    .md-mask {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.2);
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; 
+        z-index: 99;
+        -webkit-transition: all 0.3s ease-in-out;
+           -moz-transition: all 0.3s ease-in-out;
+             -o-transition: all 0.3s ease-in-out;
+                transition: all 0.3s ease-in-out;
+    }
 }
+
+.fade.ng-hide-add, .fade.ng-hide-remove {
+    -webkit-transition: all 0.2s ease-in-out;
+       -moz-transition: all 0.2s ease-in-out;
+         -o-transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+}
+.fade.ng-hide-add { 
+    opacity: 0;
+ }
+.fade.ng-hide-add.ng-hide-add-active { 
+    opacity: 1;
+ }
+.fade.ng-hide-remove { 
+    opacity: 0;
+ }
+.fade.ng-hide-remove.ng-hide-remove-active { 
+    opacity: 1;
+ }
+ 
+ md-menu-item img.favicon {
+     width: 16px;
+     height: 16px;
+     margin: auto 20px auto 4px;
+ }

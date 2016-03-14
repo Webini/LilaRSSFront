@@ -13,5 +13,21 @@
     "PSEUDO": "Pseudo",
     "REGISTER": "S'inscrire",
     "CANCEL": "Annuler",
-    "PASSWORD_FORGOTTEN": "Mot de passe oublié ?"
+    "PASSWORD_FORGOTTEN": "Mot de passe oublié ?",
+    "PASS_MIN_LENGTH_ERROR": "Le mot de passe doit faire au moins 8 caractères",
+    "PASS_MAX_LENGTH_ERROR": "Le mot de passe ne doit pas faire plus de 64 caractères",
+    "USERNAME_MAX_LENGTH_ERROR": "Le pseudo ne peut pas faire plus de 64 caractères",
+    "DEFAULT_ERROR_MESSAGE": "Une erreur inconnue s'est produite",
+    "DEFAULT_FIELDS_ERROR_MESSAGE": "{count, plural, one {Le champ {fields} est invalide} other {Les champs {fields} sont invalides}}",
+    "email": "email",
+    "passwordText": "mot de passe",
+    "username": "pseudo",
+    "REGISTER_SUCCESS": "Vous êtes a présent inscrit, vous pouvez vous connecter",
+    "USER_NOT_FOUND_ERROR": "Cet utilisateur n'existe pas",
+    "CREDENTIALS_ERROR": "Email ou mot de passe invalide",
+    "LOGIN_ERROR": "Email ou mot de passe invalide",
+    "REAUTHENTICATION": "Réauthentification...",
+    "ADD_SUBSCRIPTION": "Ajouter un abonnement",
+    "MY_ACCOUNT": "Mon compte",
+    "SUBSCRIPTIONS": "Abonnements"
 }

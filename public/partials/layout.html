@@ -1,43 +1,316 @@
 
-<section layout="row" layout-fill>
+<div layout="row" layout-fill>
     <md-sidenav 
         ui-view="menu"
-        id="sidenav" 
+        class="md-whiteframe-z2"
         md-is-locked-open="$mdMedia('gt-sm')">
 
  
-        <header class="text-center">
-            <h2><md-icon>rss_feed</md-icon>
-            <span class="vamiddle">Lila<b>RSS</b></h2>
+        <header class="md-whiteframe-z1 md-cont-primary text-center">
+            <h2 class="logo">
+                <md-icon>rss_feed</md-icon>
+                <span class="vamiddle">Lila<b>RSS</b>
+            </h2>
         </header>
-        <md-menu>
+        <div id="main-menu">
+            <md-subheader class="md-no-sticky">{{ 'MY_ACCOUNT'|translate }}</md-subheader>
             <md-menu-content>
-                <md-button class="md-raised md-primary">LAlala</md-button>
-                <md-button class="md-raised md-accent">LAlala</md-button>
-                <md-button class="md-raised md-warn">LAlala</md-button>
-                <md-toolbar>hédshé</md-toolbar>
+                <md-menu-item>
+                    <a ui-sref="login" class="md-button" md-ink-ripple>
+                        <md-icon>add</md-icon>
+                        <span md-menu-align-target>{{ 'ADD_SUBSCRIPTION'|translate }}</span>
+                    </a>
+                </md-menu-item>
+                <md-menu-item ng-repeat="item in [1, 2, 3]">
+                    <md-button>  <md-icon>person</md-icon><span md-menu-align-target>Option</span> {{item}} </md-button>
+                </md-menu-item>
             </md-menu-content>
-        </md-menu>
+
+       
+            <md-subheader class="md-no-sticky">{{ 'SUBSCRIPTIONS'|translate }}</md-subheader>
+            <md-menu-content>
+                <md-menu-item ng-repeat="item in [1, 2, 3]">
+                    <md-button>  <img src="https://material.angularjs.org/1.0.6/favicon.ico" class="favicon" /><span md-menu-align-target>Option</span> {{item}} </md-button>
+                </md-menu-item>
+            </md-menu-content>
+       </div>
     </md-sidenav>
     
-    <div flex>
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-        dfdsf<br />
-    </div>
+    <md-content class="md-cont-gray" flex layout="row" md-scroll-y layout-align="center start">
     
-    </section>
+        <md-card layout-padding flex="66" flex-sm="90" flex-md="90" flex-xs="96">
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />
+            dfdsf<br />s
+        </md-content>
+    </md-content>
+    </div>

@@ -1,12 +1,13 @@
 <div layout="row" layout-fill layout-align="center center">
     <section class="radius login-section md-whiteframe-2dp">
         <md-toolbar>
-            <div class="md-toolbar-tools" layout-align="center center">
+            <div class="md-toolbar-tools" layout-align="start center">
                 {{ 'LOGIN_TO_START'|translate }}
             </div>
         </md-toolbar>
+        <flash-messages type="primary-light" key="register.success"></flash-messages>
         <md-content layout-padding>
-            <form name="form">
+            <form name="form" ng-submit="login()">
                 <md-input-container class="md-block">
                     <label>{{ 'EMAIL'|translate }}</label>
                     <md-icon>email</md-icon>
@@ -25,14 +26,16 @@
                     </div>
                 </md-input-container>
                 <div layout="row" layout-xs="column" layout-align="space-between center">
-                    <md-switch ng-model="login.remember">{{ 'REMEMBER_ME'|translate }}</md-switch>
-                    <md-button class="md-primary md-raised">{{ 'LOGIN'|translate }}</md-button>
+                    <md-switch ng-value="true" ng-model="login.remember">{{ 'REMEMBER_ME'|translate }}</md-switch>
+                    <button type="submit" class="md-button md-primary md-raised">{{ 'LOGIN'|translate }}</button>
                 </div>
             </form>
             <p layout="row" layout-align="space-between center">
                 <a ui-sref="register">{{ 'CREATE_ACCOUNT'|translate }}</a>
                 <a href="/dashboard">{{ 'PASSWORD_FORGOTTEN'|translate }}</a>
             </p>
+            <loader ng-show="loading"></loader>
+            <display-errors error="error"></display-errors>
         </md-content>
     </section>
 </div>

@@ -32,6 +32,7 @@ module.exports = function (grunt) {
             vendor: {
                 files: {
                     './public/js/vendor.js': [
+                        './bower_components/jquery-2.2.1.min/index.js',
                         './bower_components/angular/angular.js',
                         './bower_components/angular-animate/angular-animate.js',
                         './bower_components/angular-aria/angular-aria.js',

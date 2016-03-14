@@ -27,6 +27,7 @@ angular.module('lilarss', [
     $translateProvider.preferredLanguage(browserLang);
     $translateProvider.use(browserLang); 
     $translateProvider.useMessageFormatInterpolation();
+    
 }]).config([ '$mdThemingProvider', function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
                       .primaryPalette('blue')
