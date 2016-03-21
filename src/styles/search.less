@@ -1,0 +1,43 @@
+@import 'variables.less';
+
+.search {
+    md-autocomplete {
+        background-color: rgba(255, 255, 255, 0.2);
+        
+        button svg, button path{
+            fill: @tc500;
+        }
+    }
+    
+    input { 
+        font-size: 20px !important;
+        color: #fff !important; 
+    }
+    
+    .placeholder-def() {
+        color: @tc500 !important;
+        opacity: 1 !important;
+    }
+    
+    md-autocomplete-wrap { 
+        box-shadow: none;
+    }
+    
+    input::-webkit-input-placeholder {
+        .placeholder-def();
+    }
+    input:-moz-placeholder {
+        .placeholder-def();
+    }
+    input::-moz-placeholder {
+        .placeholder-def();
+    }
+    input:-ms-input-placeholder {
+        .placeholder-def();
+    }
+    input:placeholder-shown {
+        .placeholder-def();
+    }
+}
+
+.search-icon { margin: 0 20px;}

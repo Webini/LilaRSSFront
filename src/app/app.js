@@ -31,7 +31,7 @@ angular.module('lilarss', [
 }]).config([ '$mdThemingProvider', function($mdThemingProvider) {
     $mdThemingProvider.theme('default')
                       .primaryPalette('blue')
-                      .accentPalette('orange')
+                      .accentPalette('indigo')
                       .warnPalette('deep-orange');
 }]).config([ '$mdIconProvider', function($mdIconProvider){
     $mdIconProvider.fontSet('material', 'material');

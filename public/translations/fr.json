@@ -29,5 +29,6 @@
     "REAUTHENTICATION": "Réauthentification...",
     "ADD_SUBSCRIPTION": "Ajouter un abonnement",
     "MY_ACCOUNT": "Mon compte",
-    "SUBSCRIPTIONS": "Abonnements"
+    "SUBSCRIPTIONS": "Abonnements",
+    "LOGOUT": "Se déconnecter"
 }
